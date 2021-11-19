@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+		<title>German special characters</title>
+		<style>
+			.content{
+				text-align: center;
+			}
+		</style>
+  </head>
+  <body>
+		<div class="content">
+			<p>Click a button below to copy it's character to your clipboard</p>
+    	<button onclick="esset()">ß</button>
+			<button onclick="o()">ö</button>
+			<button onclick="a()">ä</button>
+			<button onclick="u()">ü</button>
+			<button onclick="capitalO()">Ö</button>
+			<button onclick="capitalA()">Ä</button>
+			<button onclick="capitalU()">Ü</button>
+		</div>
+
+		<script>
+			function esset(){
+				navigator.clipboard.writeText("ß").catch(function(){
+					alert("Unable to write to clipboard");
+				})
+			}
+			function o(){
+				navigator.clipboard.writeText("ö").catch(function(){
+					alert("Unable to write to clipboard");
+				})
+			}
+			function a(){
+				navigator.clipboard.writeText("ä").catch(function(){
+					alert("Unable to write to clipboard");
+				})
+			}
+			function u(){
+				navigator.clipboard.writeText("ü").catch(function(){
+					alert("Unable to write to clipboard");
+				})
+			}
+			function capitalO(){
+				navigator.clipboard.writeText("Ö").catch(function(){
+					alert("Unable to write to clipboard");
+				})
+			}
+			function capitalA(){
+				navigator.clipboard.writeText("Ä").catch(function(){
+					alert("Unable to write to clipboard");
+				})
+			}
+			function capitalU(){
+				navigator.clipboard.writeText("Ü").catch(function(){
+					alert("Unable to write to clipboard");
+				})
+			}
+		</script>
+  </body>
+</html>
